@@ -1,0 +1,27 @@
+{
+  "name": "Chocolatine Auto Correct",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "La paix sur la Terre retrouvée : remplace dans toutes les pages le mot 'Chocolatine' par 'Pain au chocolat'. Ou inversement pour les mécréants.",
+  "icons": {
+    "48": "icons/icon_48_choco.png",
+    "96": "icons/icon_96_choco.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/correct.js"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "permissions": ["storage"],
+
+  "applications": {
+    "gecko": {
+      "id": "Chocolatine_Auto_Correct@example.com"
+    }
+  }
+}
