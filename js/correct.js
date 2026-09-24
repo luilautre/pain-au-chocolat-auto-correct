@@ -3,11 +3,11 @@ function onError(error) {
 }
 
 function onGot(item) {
-  var choix = "choco";
+  var choix = "pain";
   if (item.storedChoice) {
     choix = item.storedChoice;
   }
-  if (choix == "choco") {
+  if (choix == "pain") {
     remplacerChocolatineParPain()
   } else {
     remplacerPainsParChoco()
